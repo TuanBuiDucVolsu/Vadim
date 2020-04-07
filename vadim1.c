@@ -38,7 +38,7 @@ int Min(int *a,int n)
 {
 	int i,z = 0;
 	int min = a[1]; 
-	for( i= 1; i<10; i++)
+	for( i= 1; i < n; i++)
     {
     if (min>a[i])
     {
