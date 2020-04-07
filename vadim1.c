@@ -4,7 +4,6 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 void input(int *a,int n);
 void output(int *a,int n);
-int Min1(int *a,int n);
 int Min(int *a,int n);
 
 int main(int argc, char *argv[]) {
@@ -14,7 +13,6 @@ int main(int argc, char *argv[]) {
 	int *a = (int*)malloc(n * sizeof(int*));
 	input(a,n);
 	output(a,n);
-	Min1(a,n);
 	Min(a,n);
 	return 0;
 }
@@ -60,18 +58,4 @@ int Min(int *a,int n)
     printf("\nk = %d", k);
 return k;
 }
-int Min1(int *a,int n)
-{
-	int i,z = 1;
-	int min = a[1]; 
-	for( i= 1; i<10; i++)
-    {
-    if (min>a[i])
-    {
-      min = a[i];
-      z = i;
-    }
-    }
-   printf("\nNomer min elementa : %d\n", z); 
-return z;
-}
+
