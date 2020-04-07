@@ -50,7 +50,7 @@ int Min(int *a,int n)
    //  printf("\nNomer min elementa : %d\n", z);
      
     int k = 0;
-    for ( i = z +1; i<10; i++)
+    for ( i = z +1; i<n; i++)
    {
     k = k+a[i];
 
